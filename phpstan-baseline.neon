@@ -1,5 +1,6 @@
 parameters:
 	ignoreErrors:
+		# reason: Zend_Registry extends ArrayObject without generic template types; untyped upstream API kept for compatibility.
 		-
 			message: "#^Class Zend_Registry extends generic class ArrayObject but does not specify its types\\: TKey, TValue$#"
 			count: 1
